@@ -1,8 +1,16 @@
+var windowWidth = window.innerWidth;
+var windowHeight = window.innerHeight;
+
 var myid=495;
 var mydir=1;
 
 var foni=new Image();
 foni.src="back.png";
+
+function kdown(cdir)
+	{
+	mydir=cdir;
+	}
 
 
 function onBackKeyDown() 
@@ -210,5 +218,4 @@ function draw_snakes()
 	ctx.fillRect(d[0]*20,d[1]*20,20,20);
 	ctx.stroke(); 	
 	}
-
 

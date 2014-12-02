@@ -1,3 +1,6 @@
+var windowWidth = window.innerWidth;
+var windowHeight = window.innerHeight;
+
 var myid=495;
 var mydir=1;
 
@@ -192,6 +195,8 @@ function get_snakes()
 function draw_snakes()
 	{
 	can.width=can.width;
+
+		ctx.drawImage(foni,0,0);
 	for (i=0;i<5;i++ )
 		{
 		ctx.fillStyle = colors[i];
@@ -215,5 +220,4 @@ function draw_snakes()
 	ctx.fillRect(d[0]*20,d[1]*20,20,20);
 	ctx.stroke(); 	
 	}
-
 

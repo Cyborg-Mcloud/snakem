@@ -2,17 +2,17 @@
 
 <widget xmlns     = "http://www.w3.org/ns/widgets"
 		xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "com.designge.geotaxi"
-	    versionCode="17" 
+        id        = "com.designge.snakem"
+	    versionCode="15" 
         version   = "1.0.1"
-		package="com.designge.geotaxi"
+		package="com.designge.snakem"
 		>
-    <name>GeoTaxi</name>
+    <name>Snake 'Em</name>
 	<icon src="taxi.png" />
 
 	<preference name="phonegap-version" value="3.6.3" />
     <description>
-     geo taxi
+     Snake them up
     </description>
 	
 
@@ -35,7 +35,6 @@
     <plugins>
 
     </plugins>
-	<feature name="http://api.phonegap.com/1.0/geolocation"/>
 	<feature name="http://api.phonegap.com/1.0/network"/>
 
 <feature name="http://api.phonegap.com/1.0/file"/>
@@ -58,8 +57,6 @@
 
 -->
 
-	<gap:plugin name="com.simplec.plugins.powermanagement" />
-	<gap:plugin name="org.apache.cordova.geolocation" />
 	<gap:plugin name="org.apache.cordova.file" />
 	<gap:plugin name="org.apache.cordova.network-information" />
 	<gap:plugin name="org.apache.cordova.file-transfer" />

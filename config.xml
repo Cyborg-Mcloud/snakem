@@ -21,54 +21,22 @@
     </author>
 
  
-    <!--<preference name="loglevel" value="DEBUG" />-->
-    <!--
-      <preference name="splashscreen" value="resourceName" />
-      <preference name="backgroundColor" value="0xFFF" />
-      <preference name="loadUrlTimeoutValue" value="20000" />
-      <preference name="InAppBrowserStorageEnabled" value="true" />
-      <preference name="disallowOverscroll" value="true" />
-    -->
-
-  
-    <!-- Deprecated plugins element. Remove in 3.0 -->
     <plugins>
 
     </plugins>
+<preference name="orientation" value="landscape" />
 	<feature name="http://api.phonegap.com/1.0/network"/>
 
 <feature name="http://api.phonegap.com/1.0/file"/>
 <feature name="http://api.phonegap.com/1.0/filetransfer"/>
-<!--	<feature name="FileTransfer" value="org.apache.cordova.FileTransfer" />-->
+
 
 	<feature name="App">
 	  <param name="android-package" value="com.designge.locage"/>
 	</feature>
-	<!--
-<feature name="NetworkStatus">
-    <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
-    <param name="ios-package" value="CDVConnection" />
-</feature>
-
-<feature name="Geolocation">
-    <param name="android-package" value="org.apache.cordova.geolocation" />
-    <param name="ios-package" value="CDVLocation" />
-</feature>
-
--->
 
 	<gap:plugin name="org.apache.cordova.file" />
 	<gap:plugin name="org.apache.cordova.network-information" />
 	<gap:plugin name="org.apache.cordova.file-transfer" />
-	
-	
-<!--
-	<gap:platform name="ios" />
-	<gap:platform name="android" />
-	<gap:platform name="winphone" />-->
-
-
-
-<preference name="Orientation" value="portrait" />
 
 </widget>
