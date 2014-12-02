@@ -21,8 +21,33 @@
 	body {color:white; margin:0px; padding:0px;}
 	a {text-decoration:none; color:white;}
   </style>
-  <body bgcolor=black>
+  <body bgcolor=black >
 	<!-- MAIN MAP -->
-	<canvas width=800px height=481px style='float:left;width:800xp;height:481px;' id='mycan' name='mycan'></canvas>
+	<canvas width=800px height=481px style='background:URL(back.png);float:left;width:800xp;height:481px; z-index:80;' id='mycan' name='mycan'></canvas>
+
+	<A style='position:absolute; left:70px; top:360px; width:21px; height:31px; display:block; z-index:101; ' onMouseDown='kdown(1);'><img src='uparrow.png' ></a>
+<A style='position:absolute; left:70px; top:400px; width:21px; height:31px; display:block; z-index:101; ' onMouseDown='kdown(3);'><img src='down.png' ></a>
+
+<A style='position:absolute; left:630px; top:400px; width:21px; height:31px; display:block; z-index:101; ' onMouseDown='kdown(2);'><img src='right.png' ></a>
+<A style='position:absolute; left:580px; top:400px; width:21px; height:31px; display:block; z-index:101; ' onMouseDown='kdown(4);'><img src='left.png' ></a>
+
+
+<div id='nameplate0' name='nameplate0' style=' position:absolute; left:680px; top:19px; width:120px; height:40px; z-index:81;'></div>
+<div id='nameplate1' name='nameplate1' style=' position:absolute; left:680px; top:79px; width:120px; height:40px; z-index:81;'></div>
+<div id='nameplate2' name='nameplate2' style=' position:absolute; left:680px; top:139px; width:120px; height:40px; z-index:81;'></div>
+<div id='nameplate3' name='nameplate3' style=' position:absolute; left:680px; top:199px; width:120px; height:40px; z-index:81;'></div>
+<div id='nameplate4' name='nameplate4' style=' position:absolute; left:680px; top:259px; width:120px; height:40px; z-index:81;'></div>
+
+<div name='infodiv' id='infodiv'></div>
+
+
 </body>
+<script>
+
+	var can=document.getElementById("mycan");
+	var ctx=can.getContext("2d");
+
+
+startme();
+</script>
 </html>
