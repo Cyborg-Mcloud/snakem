@@ -8,62 +8,13 @@
 <!--	<script type="text/javascript" charset="utf-8" src="cordova.js"></script>-->
 
 	<script type="text/javascript" charset="utf-8" src="io.js"></script>
-	
+	<script type="text/javascript" charset="utf-8" src="func.js"></script>
 
-<script type="text/javascript" charset="utf-8">
+	<script type="text/javascript" charset="utf-8">
 
-document.addEventListener("deviceready", onDeviceReady, false);
+	document.addEventListener("deviceready", onDeviceReady, false);
 
-
-
-
-
-function onBackKeyDown() 
-	{
-	}
-
-function onVolumeDown()
-	{
-	}
-
-function onVolumeUp()
-	{
-	}
-
-function onDeviceReady() 
-	{
-
-
-	checkConnection();
-
-	document.addEventListener("pause", onPause, false);
-	document.addEventListener("backbutton", onBackKeyDown, false);
-	document.addEventListener("volumedownbutton", onVolumeDown, false);
-	document.addEventListener("volumeupbutton", onVolumeUp, false);
-	document.addEventListener("resume", onResume, false);
-	checkIfFileExists("locdata.txt");
-
-	if (dataex==0)	{WriteData();}	
-
-	ReadData();
-
-	}
-// ------------------------
-var inpause=0;
-function onPause()
-	{
-	WriteData();
-	inpause=1;
-	}
-
-function onResume() 
-	{
-	inpause=0;
-	}
-
-
-   
-
+  
     </script>
   </head>
   <style>
@@ -72,15 +23,6 @@ function onResume()
   </style>
   <body bgcolor=black>
 	<!-- MAIN MAP -->
-	<canvas width=800px height=481px style='float:left;width:1000xp;height:600px;' id='mycan' name='mycan'></canvas>
-
-
-<script>
-
-
- function fail(error) 
-	{
-    console.log(error.code);
-    }
-</script></body>
+	<canvas width=800px height=481px style='float:left;width:800xp;height:481px;' id='mycan' name='mycan'></canvas>
+</body>
 </html>
